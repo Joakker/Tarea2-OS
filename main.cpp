@@ -62,7 +62,6 @@ int main(int argc, char *argv[]) {
 
   // Se crean las hebras y se les pasa el metodo a ocupar.
   for (int i = 0; i < z; i++) {
-    // sleep(1);
     dir = v[i];
     threads.push_back(thread(mEntrada, dir));
   }
