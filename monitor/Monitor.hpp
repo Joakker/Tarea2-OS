@@ -20,6 +20,7 @@ public:
                     //    (derecha -> true, izquierda -> false)
   condition_variable a1;  // Variable de condición para autos de la derecha
   condition_variable a2;  // Variable de condición para autos de la izquierda
+  mutex m;
 
 public:
   Monitor(int n);
